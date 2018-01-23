@@ -96,3 +96,32 @@ function maximum(x, y) {
 }
 console.log(`maximum(12, 15): ${maximum(12, 15)}`);
 console.log(`maximum(13, 11): ${maximum(13, 11)}`);
+
+
+function letterGrade(score,total){
+  if(total<=||score>total)
+  throw 'Error! Total parameter must be>0,score must be >=0 and total must be greater than score';
+
+  var grade=score/total;
+
+  if(grade <=0.59)
+  return'F';
+else if(grade<=0.69)
+return'D';
+else if(grade<=0.79)
+return'C';
+else if(grade<=0.89)
+return 'B';
+else return 'A';
+
+}
+
+function convertTemperature(temp,scale){
+  if(scale=='f'){
+    return 9/5*(temp-32);
+  } else if(scale=='c'){
+    return temp;
+  } else
+  throw 'Error!Scale must be"c" of "f"';
+
+}
